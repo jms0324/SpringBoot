@@ -8,7 +8,11 @@ public class TempHandler extends GeneralException {
     public TempHandler(BaseErrorCode errorCode) {
         super(errorCode);
     }
-    //서비스에서 핸들러를 만들면 제네럴 익셉션을 만듬 (상속받아서)
+    //서비스에서 핸들러를 만들면 제네럴 익셉션 생성 (상속받아서)
+    //이건 익셉션핸들러에서 익셉션감지
+
+
+
 
 
 }

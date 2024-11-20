@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/temp")
 @RequiredArgsConstructor
-public class TempRestController {
+public class TempRestController {  //이거 안에 servlet이 있음
 
     private final TempQueryService tempQueryService;
 
