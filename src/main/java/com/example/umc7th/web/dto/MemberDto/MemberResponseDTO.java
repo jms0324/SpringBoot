@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-public class MemberResponseDto {
+public class MemberResponseDTO {
 
     @Builder
     @Getter

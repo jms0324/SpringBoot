@@ -1,4 +1,4 @@
-package com.example.umc4.domain.enums;
+package com.example.umc7th.domain.enums;
 
 public enum MemberStatus {
 

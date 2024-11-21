@@ -1,8 +1,8 @@
-package com.example.umc4.domain.mapping;
+package com.example.umc7th.domain.mapping;
 
-import com.example.umc4.domain.FoodCategory;
-import com.example.umc4.domain.Member;
-import com.example.umc4.domain.common.BaseEntity;
+import com.example.umc7th.domain.Member;
+import com.example.umc7th.domain.Terms;
+import com.example.umc7th.domain.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,7 +11,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class MemberPrefer extends BaseEntity {
+public class MemberAgree extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,8 +22,8 @@ public class MemberPrefer extends BaseEntity {
     private Member member;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
-    private FoodCategory foodCategory;
+    @JoinColumn(name = "terms_id")
+    private Terms terms;
 
 
 }

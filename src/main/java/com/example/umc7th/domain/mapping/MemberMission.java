@@ -1,9 +1,9 @@
-package com.example.umc4.domain.mapping;
+package com.example.umc7th.domain.mapping;
 
-import com.example.umc4.domain.Member;
-import com.example.umc4.domain.Mission;
-import com.example.umc4.domain.common.BaseEntity;
-import com.example.umc4.domain.enums.MissionStatus;
+import com.example.umc7th.domain.Member;
+import com.example.umc7th.domain.Mission;
+import com.example.umc7th.domain.common.BaseEntity;
+import com.example.umc7th.domain.enums.MissionStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

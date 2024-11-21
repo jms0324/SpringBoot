@@ -1,7 +1,7 @@
-package com.example.umc4.domain;
+package com.example.umc7th.domain;
 
-import com.example.umc4.domain.common.BaseEntity;
-import com.example.umc4.domain.mapping.MemberAgree;
+import com.example.umc7th.domain.common.BaseEntity;
+import com.example.umc7th.domain.mapping.MemberAgree;
 import jakarta.persistence.*;
 import lombok.*;
 

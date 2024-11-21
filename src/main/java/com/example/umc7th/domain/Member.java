@@ -1,14 +1,17 @@
-package com.example.umc4.domain;
+package com.example.umc7th.domain;
 
-import com.example.umc4.domain.common.BaseEntity;
-import com.example.umc4.domain.enums.Gender;
-import com.example.umc4.domain.enums.MemberStatus;
-import com.example.umc4.domain.enums.SocialType;
-import com.example.umc4.domain.mapping.MemberAgree;
-import com.example.umc4.domain.mapping.MemberMission;
-import com.example.umc4.domain.mapping.MemberPrefer;
+import com.example.umc7th.domain.common.BaseEntity;
+import com.example.umc7th.domain.enums.Gender;
+import com.example.umc7th.domain.enums.MemberStatus;
+import com.example.umc7th.domain.enums.SocialType;
+import com.example.umc7th.domain.mapping.MemberAgree;
+import com.example.umc7th.domain.mapping.MemberMission;
+import com.example.umc7th.domain.mapping.MemberPrefer;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -16,6 +19,8 @@ import java.util.List;
 
 @Entity
 @Getter
+@DynamicUpdate
+@DynamicInsert
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
@@ -47,9 +52,10 @@ public class Member extends BaseEntity {
 
     private LocalDate inactiveDate;
 
-    @Column(nullable = false, length = 50)
+    //    @Column(nullable = false, length = 50)
     private String email;
 
+    @ColumnDefault("0")
     private Integer point;
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
