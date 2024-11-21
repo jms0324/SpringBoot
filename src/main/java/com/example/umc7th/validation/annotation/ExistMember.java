@@ -16,4 +16,5 @@ public @interface ExistMember {
         String message() default "해당하는 회원이 존재하지 않습니다.";
         Class<?>[] groups() default {};
         Class<? extends Payload>[] payload() default {};
+
 }

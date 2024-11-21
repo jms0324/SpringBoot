@@ -1,3 +1,4 @@
+
 package com.example.umc7th.service.ReviewService;
 
 
@@ -9,5 +10,6 @@ import org.springframework.stereotype.Service;
 public interface ReviewCommandService {
 
     Review joinReview(ReviewRequestDTO.ReviewCreateDTO request);
+
 
 }

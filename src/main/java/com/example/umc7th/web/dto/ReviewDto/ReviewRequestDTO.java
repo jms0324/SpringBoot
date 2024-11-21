@@ -16,4 +16,5 @@ public class ReviewRequestDTO {
         float score;
 
     }
+
 }

@@ -1,3 +1,4 @@
+
 package com.example.umc7th.web.dto.ReviewDto;
 
 import lombok.AllArgsConstructor;
@@ -18,4 +19,5 @@ public class ReviewResponseDTO {
         LocalDateTime createdAt;
 
     }
+
 }

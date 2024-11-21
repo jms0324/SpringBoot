@@ -28,4 +28,5 @@ public class MemberExistValidator implements ConstraintValidator<ExistMember,Lon
         }
         return isValid;
     }
+
 }

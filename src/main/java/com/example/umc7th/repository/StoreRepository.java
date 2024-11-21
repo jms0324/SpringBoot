@@ -1,3 +1,4 @@
+
 package com.example.umc7th.repository;
 
 import com.example.umc7th.domain.Store;

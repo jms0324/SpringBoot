@@ -1,3 +1,4 @@
+
 package com.example.umc7th.apiPayload.exception.handler;
 
 import com.example.umc7th.apiPayload.code.BaseErrorCode;
@@ -8,4 +9,5 @@ public class StoreHandler extends GeneralException {
     public StoreHandler(BaseErrorCode errorCode) {
         super(errorCode);
     }
+
 }

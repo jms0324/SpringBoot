@@ -1,3 +1,4 @@
+
 package com.example.umc7th.validation.annotation;
 
 import com.example.umc7th.validation.validator.StoreExistValidator;
@@ -15,4 +16,5 @@ public @interface ExistStore {
     String message() default "해당하는 가게가 존재하지 않습니다.";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
+
 }
